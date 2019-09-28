@@ -1,7 +1,7 @@
 import serial
 import time
 
-ser = serial.Serial("/dev/ttyACM0", 115200)
+ser = serial.Serial("COM3", 115200)
 time.sleep(1)
 
 def decodeSerial(data):
