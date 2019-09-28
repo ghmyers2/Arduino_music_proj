@@ -1,4 +1,4 @@
- #include <Wire.h>
+#include <Wire.h>
 #include <SPI.h>
 #include <Adafruit_LSM9DS1.h>
 #include <Adafruit_Sensor.h>  // not used in this demo but required!
@@ -72,8 +72,6 @@ void loop()
   Serial.print("("); Serial.print(a.acceleration.x); Serial.print(','); Serial.print(a.acceleration.y); Serial.print(','); Serial.print(a.acceleration.z);
   Serial.print(','); Serial.print(m.magnetic.x); Serial.print(','); Serial.print(m.magnetic.y); Serial.print(','); Serial.print(m.magnetic.z); Serial.print(',');
   Serial.print(g.gyro.x);
-  Serial.print(","); Serial.print(g.gyro.y);  Serial.print(" ,"); Serial.print(g.gyro.z); Serial.print(")");
-
-  Serial.println();
+  Serial.print(","); Serial.print(g.gyro.y);  Serial.print(" ,"); Serial.print(g.gyro.z); Serial.println(")");
   delay(200);
 }
